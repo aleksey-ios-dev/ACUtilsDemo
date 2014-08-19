@@ -25,9 +25,24 @@
     return _array[(NSUInteger)indexPath.section][(NSUInteger)indexPath.row];
 }
 
-- (NSIndexPath *)indexPathForObject:(id)object {
-    //TODO write this part
-    return nil;
+- (NSIndexPath *)indexPathForObject:(id)searchedObject {
+    __block NSInteger segmentIndex = 0;
+    __block NSInteger rowIndex = 0;
+    __block BOOL objectFound = NO;
+
+    [_array enumerateObjectsUsingBlock:^(NSArray *segment, NSUInteger sectionIdx, BOOL *stop) {
+        [segment enumerateObjectsUsingBlock:^(id obj, NSUInteger objectIndex, BOOL *s) {
+            if (obj == searchedObject) {
+                segmentIndex = sectionIdx;
+                rowIndex = objectIndex;
+                objectFound = YES;
+            }
+        }];
+    }];
+
+    if (!objectFound) return nil;
+
+    return [NSIndexPath indexPathForRow:rowIndex inSection:segmentIndex];
 }
 
 

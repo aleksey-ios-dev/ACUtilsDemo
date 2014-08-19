@@ -12,10 +12,9 @@
 @property (nonatomic, copy) ACRowTitleBlock rowTitleBlock;
 @property (nonatomic, copy) ACSectionTitleBlock sectionTitleBlock;
 @property (nonatomic, copy) ACComparisonBlock inSectionSortingComparator;
-
 @property (nonatomic, strong) Class<ACTableViewHeaderFooter> headerClass;
 
-//PRIVATE
+#pragma mark - Instantiation
 
 - (instancetype)initWith:(NSArray *)array cellClass:(Class)cellClass;
 - (instancetype)initWith:(NSArray *)array cellClassBlock:(ACCellClassBlock)cellClassBlock;
@@ -28,9 +27,5 @@
 + (instancetype)sourceWith:(NSArray *)array groupedBy:(NSString *)group cellClassBlock:(ACCellClassBlock)cellClassBlock;
 
 - (NSIndexPath *)indexPathForObject:(id)object;
-
-//PRIVATE
-- (void)removeObject:(id)object;
-- (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

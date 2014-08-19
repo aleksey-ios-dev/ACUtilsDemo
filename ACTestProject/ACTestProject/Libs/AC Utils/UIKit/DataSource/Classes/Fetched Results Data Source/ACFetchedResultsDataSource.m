@@ -11,6 +11,16 @@
 @property (nonatomic, strong) NSBlockOperation *operation;
 @property (nonatomic, copy) ACCellClassBlock cellClassBlock;
 
+@property (nonatomic, copy) void (^willChangeContent)(void);
+@property (nonatomic, copy) void (^didChangeContent)(void(^updates)(void));
+
+@property (nonatomic, copy) void (^insertRows)(NSArray *indexPaths);
+@property (nonatomic, copy) void (^deleteRows)(NSArray *indexPaths);
+@property (nonatomic, copy) void (^updateRows)(NSArray *indexPaths);
+
+@property (nonatomic, copy) void (^insertSections)(NSIndexSet *sectionIndexes);
+@property (nonatomic, copy) void (^deleteSections)(NSIndexSet *sectionIndexes);
+
 @end
 
 @implementation ACFetchedResultsDataSource

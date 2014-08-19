@@ -152,7 +152,7 @@
     __block BOOL objectFound = NO;
 
     [_sections enumerateObjectsUsingBlock:^(NSArray *section, NSUInteger sectionIdx, BOOL *stop) {
-        [section enumerateObjectsUsingBlock:^(id obj, NSUInteger objectIndex, BOOL *stop) {
+        [section enumerateObjectsUsingBlock:^(id obj, NSUInteger objectIndex, BOOL *s) {
             if (obj == searchedObject) {
                 sectionIndex = sectionIdx;
                 rowIndex = objectIndex;

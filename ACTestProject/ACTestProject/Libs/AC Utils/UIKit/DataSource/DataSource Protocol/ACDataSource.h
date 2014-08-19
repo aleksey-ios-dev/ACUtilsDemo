@@ -17,15 +17,26 @@
 @property (nonatomic, strong) NSMutableArray *array;
 
 @optional
-@property (nonatomic, copy) void (^willChangeContent)(void);
-@property (nonatomic, copy) void (^didChangeContent)(void(^updates)(void));
+- (void (^)(void))willChangeContent;
+- (void)setWillChangeContent:(void (^)(void))willChangeContent;
 
-@property (nonatomic, copy) void (^insertRows)(NSArray *indexPaths);
-@property (nonatomic, copy) void (^deleteRows)(NSArray *indexPaths);
-@property (nonatomic, copy) void (^updateRows)(NSArray *indexPaths);
+- (void (^)(void (^)(void)))didChangeContent;
+- (void)setDidChangeContent:(void (^)(void (^updates)(void)))didChangeContent;
 
-@property (nonatomic, copy) void (^insertSections)(NSIndexSet *sectionIndexes);
-@property (nonatomic, copy) void (^deleteSections)(NSIndexSet *sectionIndexes);
+- (void (^)(NSArray *indexPaths))insertRows;
+- (void)setInsertRows:(void (^)(NSArray *indexPaths))insertRows;
+
+- (void (^)(NSArray *indexPaths))deleteRows;
+- (void)setDeleteRows:(void (^)(NSArray *indexPaths))deleteRows;
+
+- (void (^)(NSArray *indexPaths))updateRows;
+- (void)setUpdateRows:(void (^)(NSArray *indexPaths))updateRows;
+
+- (void (^)(NSIndexSet *sectionIndexes))insertSections;
+- (void)setInsertSections:(void (^)(NSIndexSet *sectionIndexes))insertSections;
+
+- (void (^)(NSIndexSet *sectionIndexes))deleteSections;
+- (void)setDeleteSections:(void (^)(NSIndexSet *sectionIndexes))deleteSections;
 
 - (Class<ACTableViewHeaderFooter>)classForHeaderInSection:(NSInteger)section;
 
