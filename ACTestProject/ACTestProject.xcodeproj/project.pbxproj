@@ -91,7 +91,6 @@
 		938B5C5745F562C1665F450A /* UIView+ACAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55359067216CCF1E12B8 /* UIView+ACAnimation.m */; };
 		938B5CAC1C1FDA2673E97F8A /* UIPageViewController+ACPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B589D4DBED33FDFBE12E7 /* UIPageViewController+ACPageController.m */; };
 		938B5CDB57754DAA78FD6148 /* UIView+TLKAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5F1469251B6EB84A5C29 /* UIView+TLKAppearance.m */; };
-		938B5E70302870429E1F0FDC /* DAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5591819C4EC5EFDFE4AC /* DAValidator.m */; };
 		938B5EAA53BF11C32B40A75A /* ACPickerViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B52AAA9EA4303D198529E /* ACPickerViewAdapter.m */; };
 		938B5EC66E3D757F50668A58 /* UIPickerView+ACAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5688811B5B3234C9F096 /* UIPickerView+ACAdapter.m */; };
 		938B5F5F75C96CFAE5E1A15F /* ACCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5B48E8445DEC1D3B5D38 /* ACCollectionViewController.m */; };
@@ -225,7 +224,6 @@
 		938B553D7EDAD5F5D5B05294 /* ACDateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACDateViewController.xib; sourceTree = "<group>"; };
 		938B55585807BFD3B48CFD8A /* UICollectionView+ACAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ACAdapter.m"; sourceTree = "<group>"; };
 		938B557C71C884614123BE2D /* ACDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDateViewController.h; sourceTree = "<group>"; };
-		938B5591819C4EC5EFDFE4AC /* DAValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAValidator.m; sourceTree = "<group>"; };
 		938B55A95190AB4238C58F7D /* ACPlayerTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPlayerTreatmentViewController.m; sourceTree = "<group>"; };
 		938B55B4FB4F72EBA7978A54 /* UIView+ACNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACNib.m"; sourceTree = "<group>"; };
 		938B55DF1C7EA29FDA1C23CA /* ACSampleNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACSampleNetworkManager.m; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 		938B5688811B5B3234C9F096 /* UIPickerView+ACAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+ACAdapter.m"; sourceTree = "<group>"; };
 		938B56B0032DE3C42F3AC4E2 /* ACActionSheetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActionSheetDelegate.h; sourceTree = "<group>"; };
 		938B5766CA3E4EFE98C1B0AE /* ACPickerViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPickerViewAdapter.h; sourceTree = "<group>"; };
-		938B57AB3852DB69F8C5D027 /* DAValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAValidator.h; sourceTree = "<group>"; };
 		938B57D579AB730C07A30DD4 /* UIPickerView+ACAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+ACAdapter.h"; sourceTree = "<group>"; };
 		938B57EAB6CE61DBE3A2FF63 /* UIViewController+ACPageNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ACPageNumber.h"; sourceTree = "<group>"; };
 		938B57F939072CFEC3E71E6D /* ACObjectConsuming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACObjectConsuming.h; sourceTree = "<group>"; };
@@ -680,15 +677,6 @@
 			path = "DataSource Protocol";
 			sourceTree = "<group>";
 		};
-		938B53D4796DA8F93AD2030C /* Validator */ = {
-			isa = PBXGroup;
-			children = (
-				938B57AB3852DB69F8C5D027 /* DAValidator.h */,
-				938B5591819C4EC5EFDFE4AC /* DAValidator.m */,
-			);
-			path = Validator;
-			sourceTree = "<group>";
-		};
 		938B54606645F861062A84D3 /* Array Data Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,7 +960,6 @@
 		938B5E10D81E8C95A5894A5A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				938B53D4796DA8F93AD2030C /* Validator */,
 				938B5AE9801E7DF60EB3D296 /* DataSource */,
 				938B557C32F96CAEEA4C8A3A /* UIAlertView */,
 				938B54705CE5AF109D291245 /* UITableView */,
@@ -1153,7 +1140,6 @@
 				938B50A5284F871F62161CCA /* ACPlayerTreatmentViewController.m in Sources */,
 				938B50E0C86CF9EAA3136F02 /* ACPickerViewController.m in Sources */,
 				938B524B1373F41CCBDB0DB8 /* ACDateViewController.m in Sources */,
-				938B5E70302870429E1F0FDC /* DAValidator.m in Sources */,
 				938B55FE8A56150B63470CCB /* ACArrayDataSource.m in Sources */,
 				938B58810AEB060D97B821C6 /* ACSegmentedDataSource.m in Sources */,
 				938B5C513E57C579397D91C0 /* ACComponent.m in Sources */,
