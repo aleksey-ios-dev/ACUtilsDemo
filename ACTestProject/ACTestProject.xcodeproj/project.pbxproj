@@ -62,12 +62,38 @@
 		938B50A5284F871F62161CCA /* ACPlayerTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55A95190AB4238C58F7D /* ACPlayerTreatmentViewController.m */; };
 		938B50E0C86CF9EAA3136F02 /* ACPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5D767B2580B6B9DD57F7 /* ACPickerViewController.m */; };
 		938B514307EFF0A7AA099C38 /* ACSampleNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55DF1C7EA29FDA1C23CA /* ACSampleNetworkManager.m */; };
+		938B51AE6305146170F75B0A /* ACDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938B553D7EDAD5F5D5B05294 /* ACDateViewController.xib */; };
+		938B51D74003907F9AC97890 /* UIActionSheet+ACBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5C11F69106BBA6BA5544 /* UIActionSheet+ACBlocks.m */; };
+		938B524B1373F41CCBDB0DB8 /* ACDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5CCE8B44A38CEAC15202 /* ACDateViewController.m */; };
+		938B52E1AB1E077368D6201E /* ACTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B54E6A282160E06DF583C /* ACTableViewAdapter.m */; };
 		938B5316FF783CE404E52D34 /* ACSamplePlayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5BA9CC7602AA7DDFE376 /* ACSamplePlayer+Extension.m */; };
+		938B5318694159A6597C16AB /* ACFetchedResultsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B51AB124786D7ACE5D6F7 /* ACFetchedResultsDataSource.m */; };
+		938B532374C27B85106C52D1 /* UIViewController+ACPageNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5FF5AC7F39F61B785873 /* UIViewController+ACPageNumber.m */; };
+		938B5509A3A0B333324956E8 /* ACPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5381C753D47AADBE7231 /* ACPageController.m */; };
+		938B55725DD01BC8FF87CD6E /* UIView+ACFrames.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5CEEA3153BA0AC048D89 /* UIView+ACFrames.m */; };
+		938B558FF42F12CE4A33234A /* ACCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5CFC6B48FD5EE1BA143F /* ACCollectionViewAdapter.m */; };
 		938B55B1AE126902ECE8256A /* ACTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B58AE3B16BB125C2029CA /* ACTableViewController.m */; };
+		938B55FE8A56150B63470CCB /* ACArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B581B25CA0E8C7F19D19C /* ACArrayDataSource.m */; };
 		938B5602C2F952B1D70D91C5 /* ACCollectionViewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B58F3C7660EA80F71E0E2 /* ACCollectionViewListCell.m */; };
+		938B5659C390E43F9BF2E8C8 /* UIAlertView+ACBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B59EAC4ABB56625305854 /* UIAlertView+ACBlocks.m */; };
+		938B56937C9868A57D99ED95 /* ACAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5E655C096FB5D735390B /* ACAlertViewDelegate.m */; };
+		938B56DC5421739FADA7417C /* UIView+ACNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55B4FB4F72EBA7978A54 /* UIView+ACNib.m */; };
+		938B58810AEB060D97B821C6 /* ACSegmentedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B51D78AE523D6F9C239EE /* ACSegmentedDataSource.m */; };
+		938B5905F9B65920BB673ADA /* NSObject+ACClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5C286AB742DF56A421BB /* NSObject+ACClassName.m */; };
+		938B596661F588FDF6B3A4C4 /* UITableView+ACAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5BF1976F8C9F28614727 /* UITableView+ACAdapter.m */; };
+		938B5966AD3E240CC98046C8 /* ACEndlessPagingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B52A1BF466399772BA019 /* ACEndlessPagingController.m */; };
+		938B59AE9B8C563ED0D41FEB /* ACComponentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5EC835F7D42D9448C48D /* ACComponentsDataSource.m */; };
 		938B5A0668FC722015E065F9 /* ACPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938B520A4839138E70595271 /* ACPickerViewController.xib */; };
+		938B5A3214DFF444A83D8BA9 /* ACActionSheetDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5515469D79FE4DB7903C /* ACActionSheetDelegate.m */; };
 		938B5A75E350861BD9C2226C /* ACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B58894F1B7B20A8DA854A /* ACMainViewController.m */; };
+		938B5C4F49DF9EF59FBC2C94 /* UICollectionView+ACAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55585807BFD3B48CFD8A /* UICollectionView+ACAdapter.m */; };
+		938B5C513E57C579397D91C0 /* ACComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5E0AE23052937DE78AF8 /* ACComponent.m */; };
+		938B5C5745F562C1665F450A /* UIView+ACAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B55359067216CCF1E12B8 /* UIView+ACAnimation.m */; };
+		938B5CAC1C1FDA2673E97F8A /* UIPageViewController+ACPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B589D4DBED33FDFBE12E7 /* UIPageViewController+ACPageController.m */; };
 		938B5CDB57754DAA78FD6148 /* UIView+TLKAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5F1469251B6EB84A5C29 /* UIView+TLKAppearance.m */; };
+		938B5E70302870429E1F0FDC /* DAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5591819C4EC5EFDFE4AC /* DAValidator.m */; };
+		938B5EAA53BF11C32B40A75A /* ACPickerViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B52AAA9EA4303D198529E /* ACPickerViewAdapter.m */; };
+		938B5EC66E3D757F50668A58 /* UIPickerView+ACAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5688811B5B3234C9F096 /* UIPickerView+ACAdapter.m */; };
 		938B5F5F75C96CFAE5E1A15F /* ACCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B5B48E8445DEC1D3B5D38 /* ACCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -173,25 +199,82 @@
 		82A7FC6E18F6DA3200A29EB2 /* ACTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACTestProjectTests.m; sourceTree = "<group>"; };
 		82BE1FF11922731C00B019B8 /* ACCollectionViewListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACCollectionViewListCell.xib; sourceTree = "<group>"; };
 		82F1B55A18FBD49800F8AD9B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		938B50713CF8399AC4C5AFD8 /* ACCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCollectionViewAdapter.h; sourceTree = "<group>"; };
+		938B5078DFB4F4DB43F9DE84 /* ACFetchedResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFetchedResultsDataSource.h; sourceTree = "<group>"; };
 		938B50834522F7FB0D6F9ED1 /* ACCollectionViewListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCollectionViewListCell.h; sourceTree = "<group>"; };
+		938B509F7F3154A41CAAB673 /* ACEndlessPagingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEndlessPagingController.h; sourceTree = "<group>"; };
+		938B50C2FEA97F73920D6908 /* UIAlertView+ACBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ACBlocks.h"; sourceTree = "<group>"; };
+		938B514E80CC87FC3C52B1D8 /* ACSegmentedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSegmentedDataSource.h; sourceTree = "<group>"; };
+		938B51AB124786D7ACE5D6F7 /* ACFetchedResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFetchedResultsDataSource.m; sourceTree = "<group>"; };
+		938B51D78AE523D6F9C239EE /* ACSegmentedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACSegmentedDataSource.m; sourceTree = "<group>"; };
 		938B520A4839138E70595271 /* ACPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACPickerViewController.xib; sourceTree = "<group>"; };
+		938B52A1BF466399772BA019 /* ACEndlessPagingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEndlessPagingController.m; sourceTree = "<group>"; };
+		938B52AAA9EA4303D198529E /* ACPickerViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPickerViewAdapter.m; sourceTree = "<group>"; };
+		938B52C1577B75C788FEB1AB /* UIActionSheet+ACBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+ACBlocks.h"; sourceTree = "<group>"; };
+		938B531D57C6E06616BD812F /* ACArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACArrayDataSource.h; sourceTree = "<group>"; };
+		938B5381C753D47AADBE7231 /* ACPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPageController.m; sourceTree = "<group>"; };
 		938B53A77F2B30384021C609 /* ACTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewController.h; sourceTree = "<group>"; };
+		938B540A8AE89D0C852D8968 /* ACComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACComponent.h; sourceTree = "<group>"; };
+		938B543D7B54D25FD51CB72C /* NSObject+ACClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ACClassName.h"; sourceTree = "<group>"; };
 		938B545A8EB15F30C676E74A /* ACPlayerTreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPlayerTreatmentViewController.h; sourceTree = "<group>"; };
+		938B54ACCA99BD35C7EE25BB /* ACDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDataSource.h; sourceTree = "<group>"; };
+		938B54E6A282160E06DF583C /* ACTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewAdapter.m; sourceTree = "<group>"; };
+		938B5515469D79FE4DB7903C /* ACActionSheetDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActionSheetDelegate.m; sourceTree = "<group>"; };
 		938B551F96F68D4E24120320 /* ACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMainViewController.h; sourceTree = "<group>"; };
+		938B55359067216CCF1E12B8 /* UIView+ACAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACAnimation.m"; sourceTree = "<group>"; };
+		938B553D7EDAD5F5D5B05294 /* ACDateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACDateViewController.xib; sourceTree = "<group>"; };
+		938B55585807BFD3B48CFD8A /* UICollectionView+ACAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ACAdapter.m"; sourceTree = "<group>"; };
+		938B557C71C884614123BE2D /* ACDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDateViewController.h; sourceTree = "<group>"; };
+		938B5591819C4EC5EFDFE4AC /* DAValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAValidator.m; sourceTree = "<group>"; };
 		938B55A95190AB4238C58F7D /* ACPlayerTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPlayerTreatmentViewController.m; sourceTree = "<group>"; };
+		938B55B4FB4F72EBA7978A54 /* UIView+ACNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACNib.m"; sourceTree = "<group>"; };
 		938B55DF1C7EA29FDA1C23CA /* ACSampleNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACSampleNetworkManager.m; sourceTree = "<group>"; };
+		938B560E6EFFD70602F837F8 /* ACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewCell.h; sourceTree = "<group>"; };
+		938B563CF19999468C7B4687 /* ACTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewAdapter.h; sourceTree = "<group>"; };
+		938B5688811B5B3234C9F096 /* UIPickerView+ACAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+ACAdapter.m"; sourceTree = "<group>"; };
+		938B56B0032DE3C42F3AC4E2 /* ACActionSheetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActionSheetDelegate.h; sourceTree = "<group>"; };
+		938B5766CA3E4EFE98C1B0AE /* ACPickerViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPickerViewAdapter.h; sourceTree = "<group>"; };
+		938B57AB3852DB69F8C5D027 /* DAValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAValidator.h; sourceTree = "<group>"; };
+		938B57D579AB730C07A30DD4 /* UIPickerView+ACAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+ACAdapter.h"; sourceTree = "<group>"; };
+		938B57EAB6CE61DBE3A2FF63 /* UIViewController+ACPageNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ACPageNumber.h"; sourceTree = "<group>"; };
+		938B57F939072CFEC3E71E6D /* ACObjectConsuming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACObjectConsuming.h; sourceTree = "<group>"; };
+		938B581B25CA0E8C7F19D19C /* ACArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACArrayDataSource.m; sourceTree = "<group>"; };
+		938B586A7C6C8A96D167A08D /* ACPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPageController.h; sourceTree = "<group>"; };
 		938B58894F1B7B20A8DA854A /* ACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMainViewController.m; sourceTree = "<group>"; };
+		938B589D4DBED33FDFBE12E7 /* UIPageViewController+ACPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+ACPageController.m"; sourceTree = "<group>"; };
 		938B58AE3B16BB125C2029CA /* ACTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewController.m; sourceTree = "<group>"; };
 		938B58F3C7660EA80F71E0E2 /* ACCollectionViewListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCollectionViewListCell.m; sourceTree = "<group>"; };
 		938B593841498B7298BD818D /* ACSampleNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSampleNetworkManager.h; sourceTree = "<group>"; };
+		938B5982AE9B6FEECC8886CE /* ACUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUtils.h; sourceTree = "<group>"; };
+		938B59E8D5EE3D135E5E34F1 /* ACComponentsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACComponentsDataSource.h; sourceTree = "<group>"; };
+		938B59EAC4ABB56625305854 /* UIAlertView+ACBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ACBlocks.m"; sourceTree = "<group>"; };
 		938B5B07826BCA1626AAF2CF /* UIView+TLKAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TLKAppearance.h"; sourceTree = "<group>"; };
+		938B5B1967800AD628AC54B2 /* UIView+ACFrames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ACFrames.h"; sourceTree = "<group>"; };
 		938B5B3A734C3EB565C63C9A /* ACPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPickerViewController.h; sourceTree = "<group>"; };
 		938B5B48E8445DEC1D3B5D38 /* ACCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCollectionViewController.m; sourceTree = "<group>"; };
 		938B5BA9CC7602AA7DDFE376 /* ACSamplePlayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACSamplePlayer+Extension.m"; sourceTree = "<group>"; };
+		938B5BF1976F8C9F28614727 /* UITableView+ACAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ACAdapter.m"; sourceTree = "<group>"; };
+		938B5C11F69106BBA6BA5544 /* UIActionSheet+ACBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+ACBlocks.m"; sourceTree = "<group>"; };
+		938B5C286AB742DF56A421BB /* NSObject+ACClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ACClassName.m"; sourceTree = "<group>"; };
+		938B5C4482DB78BFC8AF6351 /* UIView+ACNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ACNib.h"; sourceTree = "<group>"; };
+		938B5CCE8B44A38CEAC15202 /* ACDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDateViewController.m; sourceTree = "<group>"; };
+		938B5CDBC117AA0DB36A41BA /* UIPageViewController+ACPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+ACPageController.h"; sourceTree = "<group>"; };
+		938B5CEEA3153BA0AC048D89 /* UIView+ACFrames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACFrames.m"; sourceTree = "<group>"; };
+		938B5CFC6B48FD5EE1BA143F /* ACCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCollectionViewAdapter.m; sourceTree = "<group>"; };
 		938B5D767B2580B6B9DD57F7 /* ACPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPickerViewController.m; sourceTree = "<group>"; };
+		938B5D8F63A3413BD27D912F /* ACTableViewHeaderFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewHeaderFooter.h; sourceTree = "<group>"; };
+		938B5E0AE23052937DE78AF8 /* ACComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACComponent.m; sourceTree = "<group>"; };
 		938B5E63D4D87B24578176FC /* ACSamplePlayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACSamplePlayer+Extension.h"; sourceTree = "<group>"; };
+		938B5E655C096FB5D735390B /* ACAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAlertViewDelegate.m; sourceTree = "<group>"; };
+		938B5E69607E695EB46F52D7 /* UITableView+ACAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ACAdapter.h"; sourceTree = "<group>"; };
 		938B5EB4A520D67671C320CC /* ACCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCollectionViewController.h; sourceTree = "<group>"; };
+		938B5EB9B07E107348A0F3A4 /* ACAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAlertViewDelegate.h; sourceTree = "<group>"; };
+		938B5EC835F7D42D9448C48D /* ACComponentsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACComponentsDataSource.m; sourceTree = "<group>"; };
 		938B5F1469251B6EB84A5C29 /* UIView+TLKAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLKAppearance.m"; sourceTree = "<group>"; };
+		938B5F2C438B10938994C3E6 /* ACDataSourceDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDataSourceDefinitions.h; sourceTree = "<group>"; };
+		938B5F6359653C882C7D6FB5 /* UIView+ACAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ACAnimation.h"; sourceTree = "<group>"; };
+		938B5FE8208055E054C0E158 /* UICollectionView+ACAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ACAdapter.h"; sourceTree = "<group>"; };
+		938B5FF5AC7F39F61B785873 /* UIViewController+ACPageNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ACPageNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +329,7 @@
 				1A54F2C45A23E660F6D6DA3E /* MagicalRecord */,
 				1A54F5AF4D8108CFC7513A57 /* MBProgressHUD */,
 				938B5C1DAF6B127A00AA8BB2 /* UIView + TLKAppearance */,
+				938B5DAD6FA8CE7B29BCBD01 /* AC Utils */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -498,6 +582,140 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		938B501B4294B12DE01F8067 /* Components Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				938B5D8FD4700EB3B0045F00 /* Component */,
+				938B59E8D5EE3D135E5E34F1 /* ACComponentsDataSource.h */,
+				938B5EC835F7D42D9448C48D /* ACComponentsDataSource.m */,
+			);
+			path = "Components Data Source";
+			sourceTree = "<group>";
+		};
+		938B51043F933EB3BE1596D1 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				938B5490DC42F3315FC7596C /* Adapter */,
+				938B52770196D1EE96C4378F /* UIPickerView + ACAdapter */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		938B516D026C9DDD44F627E4 /* UIViewController + PageNumber */ = {
+			isa = PBXGroup;
+			children = (
+				938B57EAB6CE61DBE3A2FF63 /* UIViewController+ACPageNumber.h */,
+				938B5FF5AC7F39F61B785873 /* UIViewController+ACPageNumber.m */,
+			);
+			path = "UIViewController + PageNumber";
+			sourceTree = "<group>";
+		};
+		938B51A03910F28D3EBC199D /* Endless Paging Controller */ = {
+			isa = PBXGroup;
+			children = (
+				938B51CB7DAF0C837C4CCA15 /* Paging Controller */,
+				938B516D026C9DDD44F627E4 /* UIViewController + PageNumber */,
+			);
+			path = "Endless Paging Controller";
+			sourceTree = "<group>";
+		};
+		938B51CB7DAF0C837C4CCA15 /* Paging Controller */ = {
+			isa = PBXGroup;
+			children = (
+				938B509F7F3154A41CAAB673 /* ACEndlessPagingController.h */,
+				938B52A1BF466399772BA019 /* ACEndlessPagingController.m */,
+			);
+			path = "Paging Controller";
+			sourceTree = "<group>";
+		};
+		938B5218D6BA0947C9EC8A54 /* UICollectionView + ACAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B5FE8208055E054C0E158 /* UICollectionView+ACAdapter.h */,
+				938B55585807BFD3B48CFD8A /* UICollectionView+ACAdapter.m */,
+			);
+			path = "UICollectionView + ACAdapter";
+			sourceTree = "<group>";
+		};
+		938B52770196D1EE96C4378F /* UIPickerView + ACAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B57D579AB730C07A30DD4 /* UIPickerView+ACAdapter.h */,
+				938B5688811B5B3234C9F096 /* UIPickerView+ACAdapter.m */,
+			);
+			path = "UIPickerView + ACAdapter";
+			sourceTree = "<group>";
+		};
+		938B52823221FAD008AADC8F /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				938B5D328A8F2CEB9BD1AB63 /* Adapter */,
+				938B5218D6BA0947C9EC8A54 /* UICollectionView + ACAdapter */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		938B52A527F65B4571A859D5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				938B56B0032DE3C42F3AC4E2 /* ACActionSheetDelegate.h */,
+				938B5515469D79FE4DB7903C /* ACActionSheetDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		938B52C2BDC650D3F7B6E41C /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				938B5F2C438B10938994C3E6 /* ACDataSourceDefinitions.h */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		938B53C6C2DEAD7E2AF71190 /* DataSource Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				938B54ACCA99BD35C7EE25BB /* ACDataSource.h */,
+			);
+			path = "DataSource Protocol";
+			sourceTree = "<group>";
+		};
+		938B53D4796DA8F93AD2030C /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				938B57AB3852DB69F8C5D027 /* DAValidator.h */,
+				938B5591819C4EC5EFDFE4AC /* DAValidator.m */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		938B54606645F861062A84D3 /* Array Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				938B531D57C6E06616BD812F /* ACArrayDataSource.h */,
+				938B581B25CA0E8C7F19D19C /* ACArrayDataSource.m */,
+			);
+			path = "Array Data Source";
+			sourceTree = "<group>";
+		};
+		938B54705CE5AF109D291245 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				938B5A57D894B2312FDA1DA3 /* Adapter */,
+				938B555E8B4FF5734B2BFC23 /* UITableView + ACAdapter */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		938B5490DC42F3315FC7596C /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B5766CA3E4EFE98C1B0AE /* ACPickerViewAdapter.h */,
+				938B52AAA9EA4303D198529E /* ACPickerViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		938B54C7FA751DCD265A7324 /* Player Treatment ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +733,24 @@
 				82493FD11924E63000CBE431 /* ACTableViewController.xib */,
 			);
 			path = "Table ViewController";
+			sourceTree = "<group>";
+		};
+		938B555E8B4FF5734B2BFC23 /* UITableView + ACAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B5E69607E695EB46F52D7 /* UITableView+ACAdapter.h */,
+				938B5BF1976F8C9F28614727 /* UITableView+ACAdapter.m */,
+			);
+			path = "UITableView + ACAdapter";
+			sourceTree = "<group>";
+		};
+		938B557C32F96CAEEA4C8A3A /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				938B575DBC66A0EED50B05B6 /* Delegate */,
+				938B5D3C951335F67A1BAA64 /* AlertView + Blocks */,
+			);
+			path = UIAlertView;
 			sourceTree = "<group>";
 		};
 		938B55B91955FB507A1A7293 /* CollectionListCell */ = {
@@ -546,6 +782,62 @@
 			path = "Network Manager";
 			sourceTree = "<group>";
 		};
+		938B575DBC66A0EED50B05B6 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				938B5EB9B07E107348A0F3A4 /* ACAlertViewDelegate.h */,
+				938B5E655C096FB5D735390B /* ACAlertViewDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		938B584E7D5604881CD4062F /* UIPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				938B595A91300BAEE0F4D023 /* Page Controller */,
+				938B51A03910F28D3EBC199D /* Endless Paging Controller */,
+				938B5A7D87F7E4EECD9527D7 /* UIPageViewController + ACPageController */,
+			);
+			path = UIPageViewController;
+			sourceTree = "<group>";
+		};
+		938B58752162A3B68C359B6D /* Fetched Results Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				938B5078DFB4F4DB43F9DE84 /* ACFetchedResultsDataSource.h */,
+				938B51AB124786D7ACE5D6F7 /* ACFetchedResultsDataSource.m */,
+			);
+			path = "Fetched Results Data Source";
+			sourceTree = "<group>";
+		};
+		938B58D5476519F4AEA5F97B /* ActionSheet + Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				938B52C1577B75C788FEB1AB /* UIActionSheet+ACBlocks.h */,
+				938B5C11F69106BBA6BA5544 /* UIActionSheet+ACBlocks.m */,
+			);
+			path = "ActionSheet + Blocks";
+			sourceTree = "<group>";
+		};
+		938B595A91300BAEE0F4D023 /* Page Controller */ = {
+			isa = PBXGroup;
+			children = (
+				938B586A7C6C8A96D167A08D /* ACPageController.h */,
+				938B5381C753D47AADBE7231 /* ACPageController.m */,
+			);
+			path = "Page Controller";
+			sourceTree = "<group>";
+		};
+		938B5A3A8B44A4EC6D7DEF4D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				938B560E6EFFD70602F837F8 /* ACTableViewCell.h */,
+				938B57F939072CFEC3E71E6D /* ACObjectConsuming.h */,
+				938B5D8F63A3413BD27D912F /* ACTableViewHeaderFooter.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		938B5A40FAF44B91CC64E00A /* Collection ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +848,68 @@
 			path = "Collection ViewController";
 			sourceTree = "<group>";
 		};
+		938B5A57D894B2312FDA1DA3 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B563CF19999468C7B4687 /* ACTableViewAdapter.h */,
+				938B54E6A282160E06DF583C /* ACTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		938B5A7D87F7E4EECD9527D7 /* UIPageViewController + ACPageController */ = {
+			isa = PBXGroup;
+			children = (
+				938B5CDBC117AA0DB36A41BA /* UIPageViewController+ACPageController.h */,
+				938B589D4DBED33FDFBE12E7 /* UIPageViewController+ACPageController.m */,
+			);
+			path = "UIPageViewController + ACPageController";
+			sourceTree = "<group>";
+		};
+		938B5ACC51A3FEE551E22092 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				938B5C4482DB78BFC8AF6351 /* UIView+ACNib.h */,
+				938B55B4FB4F72EBA7978A54 /* UIView+ACNib.m */,
+				938B5B1967800AD628AC54B2 /* UIView+ACFrames.h */,
+				938B5CEEA3153BA0AC048D89 /* UIView+ACFrames.m */,
+				938B5F6359653C882C7D6FB5 /* UIView+ACAnimation.h */,
+				938B55359067216CCF1E12B8 /* UIView+ACAnimation.m */,
+				938B543D7B54D25FD51CB72C /* NSObject+ACClassName.h */,
+				938B5C286AB742DF56A421BB /* NSObject+ACClassName.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		938B5AE9801E7DF60EB3D296 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				938B5E0242CCE5075BBBF4D6 /* Classes */,
+				938B52C2BDC650D3F7B6E41C /* Definitions */,
+				938B53C6C2DEAD7E2AF71190 /* DataSource Protocol */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		938B5B512A533257EEF5B2C0 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				938B557C71C884614123BE2D /* ACDateViewController.h */,
+				938B5CCE8B44A38CEAC15202 /* ACDateViewController.m */,
+				938B553D7EDAD5F5D5B05294 /* ACDateViewController.xib */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		938B5C182E299CD500B51245 /* UIActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				938B52A527F65B4571A859D5 /* Delegate */,
+				938B58D5476519F4AEA5F97B /* ActionSheet + Blocks */,
+			);
+			path = UIActionSheet;
+			sourceTree = "<group>";
+		};
 		938B5C1DAF6B127A00AA8BB2 /* UIView + TLKAppearance */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +917,80 @@
 				938B5F1469251B6EB84A5C29 /* UIView+TLKAppearance.m */,
 			);
 			path = "UIView + TLKAppearance";
+			sourceTree = "<group>";
+		};
+		938B5D328A8F2CEB9BD1AB63 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				938B50713CF8399AC4C5AFD8 /* ACCollectionViewAdapter.h */,
+				938B5CFC6B48FD5EE1BA143F /* ACCollectionViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		938B5D3C951335F67A1BAA64 /* AlertView + Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				938B50C2FEA97F73920D6908 /* UIAlertView+ACBlocks.h */,
+				938B59EAC4ABB56625305854 /* UIAlertView+ACBlocks.m */,
+			);
+			path = "AlertView + Blocks";
+			sourceTree = "<group>";
+		};
+		938B5D8FD4700EB3B0045F00 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				938B540A8AE89D0C852D8968 /* ACComponent.h */,
+				938B5E0AE23052937DE78AF8 /* ACComponent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		938B5DAD6FA8CE7B29BCBD01 /* AC Utils */ = {
+			isa = PBXGroup;
+			children = (
+				938B5B512A533257EEF5B2C0 /* Date */,
+				938B5E10D81E8C95A5894A5A /* UIKit */,
+				938B5982AE9B6FEECC8886CE /* ACUtils.h */,
+				938B5A3A8B44A4EC6D7DEF4D /* Protocols */,
+				938B5ACC51A3FEE551E22092 /* Categories */,
+			);
+			path = "AC Utils";
+			sourceTree = "<group>";
+		};
+		938B5E0242CCE5075BBBF4D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				938B54606645F861062A84D3 /* Array Data Source */,
+				938B5EAC4AFFF3651D8F87AB /* Segmented DataSource */,
+				938B501B4294B12DE01F8067 /* Components Data Source */,
+				938B58752162A3B68C359B6D /* Fetched Results Data Source */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		938B5E10D81E8C95A5894A5A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				938B53D4796DA8F93AD2030C /* Validator */,
+				938B5AE9801E7DF60EB3D296 /* DataSource */,
+				938B557C32F96CAEEA4C8A3A /* UIAlertView */,
+				938B54705CE5AF109D291245 /* UITableView */,
+				938B51043F933EB3BE1596D1 /* UIPickerView */,
+				938B5C182E299CD500B51245 /* UIActionSheet */,
+				938B52823221FAD008AADC8F /* UICollectionView */,
+				938B584E7D5604881CD4062F /* UIPageViewController */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		938B5EAC4AFFF3651D8F87AB /* Segmented DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				938B514E80CC87FC3C52B1D8 /* ACSegmentedDataSource.h */,
+				938B51D78AE523D6F9C239EE /* ACSegmentedDataSource.m */,
+			);
+			path = "Segmented DataSource";
 			sourceTree = "<group>";
 		};
 		938B5FBFF2EBDEA7ED2E5D7D /* Picker ViewController */ = {
@@ -662,6 +1090,7 @@
 				1A54F8A9A12CD5772B56E552 /* ACSimpleCell.xib in Resources */,
 				82493FD01924E62500CBE431 /* ACMainViewController.xib in Resources */,
 				938B5A0668FC722015E065F9 /* ACPickerViewController.xib in Resources */,
+				938B51AE6305146170F75B0A /* ACDateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +1152,31 @@
 				938B5316FF783CE404E52D34 /* ACSamplePlayer+Extension.m in Sources */,
 				938B50A5284F871F62161CCA /* ACPlayerTreatmentViewController.m in Sources */,
 				938B50E0C86CF9EAA3136F02 /* ACPickerViewController.m in Sources */,
+				938B524B1373F41CCBDB0DB8 /* ACDateViewController.m in Sources */,
+				938B5E70302870429E1F0FDC /* DAValidator.m in Sources */,
+				938B55FE8A56150B63470CCB /* ACArrayDataSource.m in Sources */,
+				938B58810AEB060D97B821C6 /* ACSegmentedDataSource.m in Sources */,
+				938B5C513E57C579397D91C0 /* ACComponent.m in Sources */,
+				938B59AE9B8C563ED0D41FEB /* ACComponentsDataSource.m in Sources */,
+				938B5318694159A6597C16AB /* ACFetchedResultsDataSource.m in Sources */,
+				938B56937C9868A57D99ED95 /* ACAlertViewDelegate.m in Sources */,
+				938B5659C390E43F9BF2E8C8 /* UIAlertView+ACBlocks.m in Sources */,
+				938B52E1AB1E077368D6201E /* ACTableViewAdapter.m in Sources */,
+				938B596661F588FDF6B3A4C4 /* UITableView+ACAdapter.m in Sources */,
+				938B5EAA53BF11C32B40A75A /* ACPickerViewAdapter.m in Sources */,
+				938B5EC66E3D757F50668A58 /* UIPickerView+ACAdapter.m in Sources */,
+				938B5A3214DFF444A83D8BA9 /* ACActionSheetDelegate.m in Sources */,
+				938B51D74003907F9AC97890 /* UIActionSheet+ACBlocks.m in Sources */,
+				938B558FF42F12CE4A33234A /* ACCollectionViewAdapter.m in Sources */,
+				938B5C4F49DF9EF59FBC2C94 /* UICollectionView+ACAdapter.m in Sources */,
+				938B5509A3A0B333324956E8 /* ACPageController.m in Sources */,
+				938B5966AD3E240CC98046C8 /* ACEndlessPagingController.m in Sources */,
+				938B532374C27B85106C52D1 /* UIViewController+ACPageNumber.m in Sources */,
+				938B5CAC1C1FDA2673E97F8A /* UIPageViewController+ACPageController.m in Sources */,
+				938B56DC5421739FADA7417C /* UIView+ACNib.m in Sources */,
+				938B55725DD01BC8FF87CD6E /* UIView+ACFrames.m in Sources */,
+				938B5C5745F562C1665F450A /* UIView+ACAnimation.m in Sources */,
+				938B5905F9B65920BB673ADA /* NSObject+ACClassName.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
