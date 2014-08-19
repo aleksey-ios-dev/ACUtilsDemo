@@ -28,6 +28,16 @@
     return [(id<ACTableViewCell>)class cellHeightForObject:[_dataSource objectAtIndexPath:indexPath]];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    Class<ACTableViewHeaderFooter> class = [_dataSource classForHeaderInSection:section];
+
+    if (!class) return 0.f;
+
+    NSAssert([(id)class conformsToProtocol:@protocol(ACTableViewHeaderFooter)], @"Header must conform ACTableViewHeaderFooter protocol");
+
+    return [class heightForObject:[_dataSource objectAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:section]]];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<ACObjectConsuming> cell = [_tableView dequeueReusableCellWithIdentifier:[[_dataSource cellClassForObjectAt:indexPath] ac_reuseIdentifier]];
 
@@ -36,6 +46,7 @@
     }
 
     [cell setObject:[_dataSource objectAtIndexPath:indexPath]];
+    ac_safeBlockCall(_cellDecorator, (UITableViewCell *)cell);
 
     return (UITableViewCell *)cell;
 }
@@ -45,8 +56,24 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return nil;
+    Class headerClass = [_dataSource classForHeaderInSection:section];
+    
+    if (!headerClass) {
+        return nil;
+    }
+    
+    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[headerClass ac_reuseIdentifier]];
+    
+    if (!header) {
+        header = [headerClass new];
+    }
+
+   [(id<ACObjectConsuming>)header setObject:[_dataSource objectAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:section]]];
+
+    ac_safeBlockCall(_headerDecorator, header);
+    return header;
 }
+
 
 #pragma mark - Delegate
 
@@ -56,6 +83,34 @@
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     ac_safeBlockCall(_didDeselectCell, tableView, indexPath, [self.dataSource objectAtIndexPath:indexPath]);
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    ac_safeBlockCall(_didScroll, scrollView);
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    ac_safeBlockCall(_willDrag, scrollView);
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    ac_safeBlockCall(_didDrag, scrollView);
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    ac_safeBlockCall(_didEndDragging, scrollView);
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    ac_safeBlockCall(_willBeginDecelerating, scrollView);
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    ac_safeBlockCall(_willDisplayCell, tableView, cell);
+}
+
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    ac_safeBlockCall(_didEndDisplayCell, tableView, cell);
 }
 
 #pragma mark - Accessors
@@ -110,6 +165,49 @@
             [weakSelf.tableView deleteSections:sectionIndexes withRowAnimation:UITableViewRowAnimationFade];
         }];
     }
+}
+
+#pragma mark - Dragging
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
+      toIndexPath:(NSIndexPath *)destinationIndexPath {
+    ac_safeBlockCall(_removeGestureRecognizer);
+    id objectToMove = [[_dataSource array] objectAtIndex:(NSUInteger)sourceIndexPath.row];
+    [[_dataSource array] removeObjectAtIndex:(NSUInteger) sourceIndexPath.row];
+    [[_dataSource array] insertObject:objectToMove atIndex:(NSUInteger) destinationIndexPath.row];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
+       toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath {
+    if ([proposedDestinationIndexPath row] < [[_dataSource array] count]) {
+        return proposedDestinationIndexPath;
+    }
+    NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[[_dataSource array] count]-1 inSection:0];
+    return betterIndexPath;
+}
+
+#pragma mark - Manipulations on objects
+
+- (void)removeObject:(id)object {
+    if (![_dataSource respondsToSelector:@selector(removeObject:)]) return;
+    [self removeObjectAtIndexPath:[_dataSource indexPathForObject:object]];
+}
+
+- (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath {
+    if(![_dataSource respondsToSelector:@selector(removeObjectAtIndexPath:)]) return;
+
+    [_tableView beginUpdates];
+    [_dataSource removeObjectAtIndexPath:indexPath];
+    [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [_tableView endUpdates];
 }
 
 @end

@@ -1,6 +1,6 @@
 //
 // Created by Aleksey on 18.04.14.
-// Copyright (c) 2014 yalantis. All rights reserved.
+// Copyright (c) 2014 Aleksey Chernish. All rights reserved.
 //
 
 #import "ACDataSource.h"
@@ -8,7 +8,7 @@
 
 @interface ACSegmentedDataSource : NSObject <ACDataSource>
 
-@property (nonatomic, copy) NSArray *segments;
+@property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic, copy) NSArray *rowTitleBlocks;
 @property (nonatomic, strong) Class cellClass;
 

@@ -54,9 +54,7 @@ static void *ACActionSheetDelegateKey;
 
 - (ACActionSheetDelegate *)ac_delegate {
     ACActionSheetDelegate *delegate = objc_getAssociatedObject(self, &ACActionSheetDelegateKey);
-    if (delegate) {
-        return delegate;
-    }
+    if (delegate) return delegate;
 
     delegate = [ACActionSheetDelegate new];
     objc_setAssociatedObject(self, &ACActionSheetDelegateKey, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

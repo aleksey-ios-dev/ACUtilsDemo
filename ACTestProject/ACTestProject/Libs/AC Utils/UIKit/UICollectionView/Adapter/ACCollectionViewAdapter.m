@@ -1,6 +1,6 @@
 //
 // Created by Aleksey on 13.05.14.
-// Copyright (c) 2014 yalantis. All rights reserved.
+// Copyright (c) 2014 Aleksey Chernish. All rights reserved.
 //
 
 #import "ACCollectionViewAdapter.h"

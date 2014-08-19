@@ -1,6 +1,6 @@
 //
 // Created by Aleksey on 07.02.14.
-// Copyright (c) 2014 c8apps. All rights reserved.
+// Copyright (c) 2014 Aleksey Chernish. All rights reserved.
 //
 
 @interface UIView (ACNib)

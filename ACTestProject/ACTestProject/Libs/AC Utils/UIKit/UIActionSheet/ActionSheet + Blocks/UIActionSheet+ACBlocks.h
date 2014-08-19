@@ -19,5 +19,4 @@
 - (void)ac_setWillDismiss:(ACActionSheetActivityBlock)willDismiss;
 - (void)ac_setDidDismiss:(ACActionSheetActivityBlock)didDismiss;
 
-
 @end

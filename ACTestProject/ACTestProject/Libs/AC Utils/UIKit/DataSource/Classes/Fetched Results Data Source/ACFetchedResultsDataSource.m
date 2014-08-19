@@ -1,6 +1,6 @@
 //
 // Created by Aleksey on 14.04.14.
-// Copyright (c) 2014 yalantis. All rights reserved.
+// Copyright (c) 2014 Aleksey Chernish. All rights reserved.
 //
 
 #import "ACFetchedResultsDataSource.h"
@@ -10,6 +10,16 @@
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) NSBlockOperation *operation;
 @property (nonatomic, copy) ACCellClassBlock cellClassBlock;
+
+@property (nonatomic, copy) void (^willChangeContent)(void);
+@property (nonatomic, copy) void (^didChangeContent)(void(^updates)(void));
+
+@property (nonatomic, copy) void (^insertRows)(NSArray *indexPaths);
+@property (nonatomic, copy) void (^deleteRows)(NSArray *indexPaths);
+@property (nonatomic, copy) void (^updateRows)(NSArray *indexPaths);
+
+@property (nonatomic, copy) void (^insertSections)(NSIndexSet *sectionIndexes);
+@property (nonatomic, copy) void (^deleteSections)(NSIndexSet *sectionIndexes);
 
 @end
 
@@ -61,6 +71,10 @@
 
 - (id)objectAtIndexPath:(NSIndexPath *)indexPath {
     return [_fetchedResultsController objectAtIndexPath:indexPath];
+}
+
+- (NSIndexPath *)indexPathForObject:(id)object {
+    return [_fetchedResultsController indexPathForObject:object];
 }
 
 - (NSString *)titleForHeaderInSection:(NSInteger)section {
@@ -152,6 +166,10 @@
         default:
             break;
     }
+}
+
+- (Class)classForHeaderInSection:(NSInteger)section {
+    return _headerClass;
 }
 
 @end

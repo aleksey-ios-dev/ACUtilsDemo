@@ -7,6 +7,9 @@
 #import "ACFetchedResultsDataSource.h"
 #import "ACComponentsDataSource.h"
 #import "ACSegmentedDataSource.h"
+#import "ACObjectConsuming.h"
+#import "ACTableViewCell.h"
+#import "ACTableViewHeaderFooter.h"
 
 #import "UIActionSheet+ACBlocks.h"
 #import "UIAlertView+ACBlocks.h"

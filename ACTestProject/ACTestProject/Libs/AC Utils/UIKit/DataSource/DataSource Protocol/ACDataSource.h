@@ -3,6 +3,7 @@
 // Copyright (c) 2014 Aleksey Chernish. All rights reserved.
 //
 
+#import "ACTableViewHeaderFooter.h"
 @protocol ACDataSource <NSObject>
 
 @required
@@ -10,21 +11,39 @@
 - (NSInteger)numberOfRowsInSection:(NSInteger)section;
 - (NSInteger)numberOfSections;
 - (id)objectAtIndexPath:(NSIndexPath *)indexPath;
+- (NSIndexPath *)indexPathForObject:(id)object;
 
 @optional
-@property (nonatomic, copy) void (^willChangeContent)(void);
-@property (nonatomic, copy) void (^didChangeContent)(void(^updates)(void));
+@property (nonatomic, strong) NSMutableArray *array;
 
-@property (nonatomic, copy) void (^insertRows)(NSArray *indexPaths);
-@property (nonatomic, copy) void (^deleteRows)(NSArray *indexPaths);
-@property (nonatomic, copy) void (^updateRows)(NSArray *indexPaths);
+@optional
+- (void (^)(void))willChangeContent;
+- (void)setWillChangeContent:(void (^)(void))willChangeContent;
 
-@property (nonatomic, copy) void (^insertSections)(NSIndexSet *sectionIndexes);
-@property (nonatomic, copy) void (^deleteSections)(NSIndexSet *sectionIndexes);
+- (void (^)(void (^)(void)))didChangeContent;
+- (void)setDidChangeContent:(void (^)(void (^updates)(void)))didChangeContent;
 
-- (Class)classForHeaderInSection:(NSInteger)section;
+- (void (^)(NSArray *indexPaths))insertRows;
+- (void)setInsertRows:(void (^)(NSArray *indexPaths))insertRows;
+
+- (void (^)(NSArray *indexPaths))deleteRows;
+- (void)setDeleteRows:(void (^)(NSArray *indexPaths))deleteRows;
+
+- (void (^)(NSArray *indexPaths))updateRows;
+- (void)setUpdateRows:(void (^)(NSArray *indexPaths))updateRows;
+
+- (void (^)(NSIndexSet *sectionIndexes))insertSections;
+- (void)setInsertSections:(void (^)(NSIndexSet *sectionIndexes))insertSections;
+
+- (void (^)(NSIndexSet *sectionIndexes))deleteSections;
+- (void)setDeleteSections:(void (^)(NSIndexSet *sectionIndexes))deleteSections;
+
+- (Class<ACTableViewHeaderFooter>)classForHeaderInSection:(NSInteger)section;
 
 - (NSString *)titleForHeaderInSection:(NSInteger)section;
 - (NSString *)titleForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)removeObject:(id)object;
+- (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

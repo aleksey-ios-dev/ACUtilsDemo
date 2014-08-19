@@ -7,7 +7,6 @@
 
 @interface ACArrayDataSource ()
 
-@property (nonatomic, copy) NSArray *array;
 @property (nonatomic, copy) NSOrderedSet *sections;
 @property (nonatomic, copy) NSString *groupKey;
 @property (nonatomic, copy) ACCellClassBlock cellClassBlock;
@@ -43,7 +42,7 @@
     if (self = [super init]) {
         _cellClassBlock = cellClassBlock;
         _groupKey = group;
-        _array = array;
+        _array = [array mutableCopy];
 
         [self addObserver:self forKeyPath:@"sectionTitleBlock" options:NSKeyValueObservingOptionNew context:nil];
         [self addObserver:self forKeyPath:@"inSectionSortingComparator" options:NSKeyValueObservingOptionNew context:nil];
@@ -70,6 +69,10 @@
 }
 
 #pragma mark - ACTableViewDataSource
+
+- (Class<ACTableViewHeaderFooter>)classForHeaderInSection:(NSInteger)section {
+    return _headerClass;
+}
 
 - (Class)cellClassForObjectAt:(NSIndexPath *)indexPath {
     return _cellClassBlock(indexPath, [self objectAtIndexPath:indexPath]);
@@ -107,7 +110,10 @@
     NSMutableSet *keys = [NSMutableSet new];
 
     for (id object in _array) {
-        [keys addObject:[object valueForKey:_groupKey]];
+        id key = [object valueForKeyPath:_groupKey];
+        if (key) {
+            [keys addObject:key];
+        }
     }
 
     NSArray *sortedKeys = [[keys allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -118,7 +124,7 @@
 
     for (NSString *key in sortedKeys) {
         NSIndexSet *sectionIndexes = [_array indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-            return [[obj valueForKey:_groupKey] isEqual:key];
+            return [[obj valueForKeyPath:_groupKey] isEqual:key];
         }];
 
         NSArray *sectionContents = [_array objectsAtIndexes:sectionIndexes];
@@ -136,6 +142,37 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     [self recalculateContents];
+}
+
+#pragma mark - Helpers
+
+- (NSIndexPath *)indexPathForObject:(id)searchedObject {
+    __block NSInteger sectionIndex = 0;
+    __block NSInteger rowIndex = 0;
+    __block BOOL objectFound = NO;
+
+    [_sections enumerateObjectsUsingBlock:^(NSArray *section, NSUInteger sectionIdx, BOOL *stop) {
+        [section enumerateObjectsUsingBlock:^(id obj, NSUInteger objectIndex, BOOL *s) {
+            if (obj == searchedObject) {
+                sectionIndex = sectionIdx;
+                rowIndex = objectIndex;
+                objectFound = YES;
+            }
+        }];
+    }];
+
+    if (!objectFound) return nil;
+
+    return [NSIndexPath indexPathForRow:rowIndex inSection:sectionIndex];
+}
+
+- (void)removeObject:(id)object {
+    [self removeObjectAtIndexPath:[self indexPathForObject:object]];
+}
+
+- (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath {
+    NSMutableArray *section = [_sections objectAtIndex:(NSUInteger)indexPath.section];
+    [section removeObjectAtIndex:(NSUInteger)indexPath.row];
 }
 
 @end
